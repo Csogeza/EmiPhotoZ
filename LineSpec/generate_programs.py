@@ -1,13 +1,11 @@
 from astropy.cosmology import FlatLambdaCDM
-
-cosmo = FlatLambdaCDM(H0=70, Om0=0.3, Tcmb0=2.725)
 import scipy.interpolate
 import scipy.signal
 import os, os.path
 import numpy
 
 LIGHTSPEED = 299792.458  # km s-1
-
+cosmo = FlatLambdaCDM(H0=70, Om0=0.3, Tcmb0=2.725)
 
 # Luminosity function for drawing realistic absolute magnitudes
 def schechter_func(M, phi, m0, alp):

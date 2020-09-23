@@ -7,9 +7,7 @@ import matplotlib.pyplot
 def average_log_emission(emiss_logEW_array, emission_wl):
 
     avg_emiss = numpy.empty((len(emission_w), 2))
-
     avg_emiss[:, 0] = array(emission_wl)[:]
-
     avg_emiss[:, 1] = numpy.mean(emiss_logEW_array, axis=0)
 
     return avg_emiss
