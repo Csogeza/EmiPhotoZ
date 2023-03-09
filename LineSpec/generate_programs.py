@@ -598,7 +598,7 @@ def processInput(
 def find_line_boundary_indices(spec_bin, emi_wl, sigma, l_up, l_down):
 
     low_indices = numpy.zeros((emi_wl.shape[0]))
-    up_indices = low_indices
+    up_indices = low_indices.copy()
 
     res_fl = {}
 
